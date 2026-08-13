@@ -1,213 +1,153 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="he">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Lone Wolf Rider — מדיניות פרטיות / Privacy Policy</title>
-<meta name="description" content="מדיניות הפרטיות של אפליקציית Lone Wolf Rider. Privacy Policy for the Lone Wolf Rider app." />
-<link rel="icon" type="image/png" href="./lwr-logo.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מדיניות פרטיות · Lone Wolf Rider</title>
 <style>
-  :root {
-    --bg: #0E1116;
-    --surface: #161B22;
-    --surface-2: #1E2530;
-    --line: #2A323F;
-    --text: #F5F7FA;
-    --dim: #9AA4B2;
-    --faint: #6B7686;
-    --amber: #F5A623;
-    --red: #E63946;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: "Rubik", system-ui, -apple-system, "Segoe UI", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    line-height: 1.7;
-    padding: 0 0 64px;
-  }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 0 22px; }
-
-  header.top {
-    text-align: center;
-    padding: clamp(32px, 7vw, 56px) 22px 28px;
-    border-bottom: 1px solid var(--line);
-    margin-bottom: 36px;
-  }
-  header.top img { width: 84px; height: 84px; border-radius: 22%; box-shadow: 0 8px 28px rgba(0,0,0,.5); }
-  header.top .wm {
-    margin-top: 14px; font-weight: 900; letter-spacing: .14em; direction: ltr;
-    font-size: clamp(16px, 4.4vw, 20px);
-  }
-  header.top .wm .lwr { color: var(--amber); }
-  header.top h1 { margin-top: 10px; font-size: clamp(20px, 5vw, 26px); font-weight: 700; }
-  header.top .updated { margin-top: 8px; color: var(--faint); font-size: 13px; }
-
-  .lang-switch { text-align: center; margin-bottom: 28px; }
-  .lang-switch a {
-    color: var(--amber); text-decoration: none; font-size: 14px; font-weight: 500;
-    border: 1px solid var(--line); border-radius: 999px; padding: 6px 16px; display: inline-block;
-  }
-
-  section.policy { margin-bottom: 48px; }
-  h2 { font-size: clamp(18px, 4.6vw, 22px); font-weight: 700; margin: 32px 0 12px; color: var(--text); }
-  h2:first-child { margin-top: 0; }
-  p { color: var(--text); margin-bottom: 14px; }
-  ul { margin: 0 14px 16px; padding: 0 18px; }
-  li { color: var(--text); margin-bottom: 8px; }
-  .muted { color: var(--dim); }
-  strong { color: var(--text); font-weight: 700; }
-  a.inline { color: var(--amber); }
-  .callout {
-    background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
-    padding: 14px 16px; margin: 16px 0; color: var(--dim); font-size: 14.5px;
-  }
-  .callout strong { color: var(--amber); }
-  .divider { height: 1px; background: var(--line); margin: 40px 0; border: 0; }
-  .en { direction: ltr; text-align: left; }
-  .en ul { margin: 0 0 16px; padding: 0 22px; }
-  footer.foot { text-align: center; color: var(--faint); font-size: 12.5px; margin-top: 40px; }
-  footer.foot .em { color: var(--red); }
+  :root { --bg:#0E1116; --card:#1A1F28; --text:#F2F4F8; --dim:#8A93A2; --accent:#2FE05C; --sos:#E5484D; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+         line-height:1.7; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:20px; margin:34px 0 10px; color:var(--accent); }
+  h3 { font-size:16px; margin:20px 0 6px; }
+  p, li { color:#D7DCE4; }
+  .meta { color:var(--dim); font-size:14px; margin-bottom:28px; }
+  .card { background:var(--card); border-radius:12px; padding:18px 20px; margin:18px 0; }
+  .warn { border:1px solid var(--sos); background:#2A1416; }
+  .warn strong { color:var(--sos); }
+  ul { padding-inline-start:22px; }
+  hr { border:0; border-top:1px solid #222834; margin:48px 0; }
+  section.en { direction:ltr; text-align:left; }
+  section.he { direction:rtl; text-align:right; }
+  a { color:var(--accent); }
+  code { background:#222834; padding:1px 5px; border-radius:4px; font-size:13px; }
 </style>
 </head>
 <body>
-  <header class="top">
-    <img src="./lwr-logo.png" alt="Lone Wolf Rider" />
-    <div class="wm">LONE&nbsp;WOLF&nbsp;RIDER&nbsp;<span class="lwr">·&nbsp;LWR</span></div>
-    <h1>מדיניות פרטיות · Privacy Policy</h1>
-    <div class="updated">עודכן לאחרונה / Last updated: 29 June 2026</div>
-  </header>
+<div class="wrap">
 
-  <div class="wrap">
+<!-- ==================== HEBREW ==================== -->
+<section class="he">
+<h1>מדיניות פרטיות — Lone Wolf Rider</h1>
+<p class="meta">עודכן לאחרונה: 13 באוגוסט 2026</p>
 
-    <!-- ============ HEBREW ============ -->
-    <section class="policy" id="he">
-      <p class="muted">מדיניות פרטיות זו מסבירה איזה מידע אפליקציית Lone Wolf Rider ("האפליקציה") אוספת, כיצד היא משתמשת בו, ועם מי הוא משותף. האפליקציה היא שירות בהזמנה בלבד לרוכבי שטח בודדים, המופעל על-ידי מפתח עצמאי שלא למטרות רווח.</p>
+<p>אפליקציית Lone Wolf Rider (להלן "האפליקציה") מופעלת על ידי עמית רוטשילד כאדם פרטי. האפליקציה מיועדת לקהילה סגורה של רוכבי שטח בישראל, ומאפשרת לחבר במצוקה לשדר קריאת עזרה לשאר חברי הקהילה.</p>
 
-      <h2>מי אנחנו</h2>
-      <p>האפליקציה פותחה ומתופעלת על-ידי <strong>Amit Rothschild</strong> — מפתח עצמאי (אדם פרטי), ללא חברה וללא מטרת רווח. לכל שאלה בנושא פרטיות ניתן לפנות בדוא"ל: <a class="inline" href="mailto:amitr@duck.com">amitr@duck.com</a>.</p>
+<div class="card warn">
+<p><strong>חשוב:</strong> האפליקציה אינה שירות חירום ואינה תחליף לשירותי ההצלה. בכל מקרה חירום יש לחייג 101 (מד"א), 100 (משטרה) או 102 (כיבוי אש). אין כל התחייבות שמישהו יראה את הקריאה, יגיב לה או יוכל להגיע.</p>
+</div>
 
-      <h2>איזה מידע אנו אוספים</h2>
-      <ul>
-        <li><strong>מספר טלפון</strong> — לצורך הזדהות והתחברות (אימות באמצעות SMS) וכזיהוי שלך בתוך המעגל.</li>
-        <li><strong>שם</strong> — מוצג לחברי המעגל בעת קריאת מצוקה, כדי שיזהו אותך.</li>
-        <li><strong>סוגי כלי רכב</strong> — מוצגים לחברים כדי שידעו עם איזה רכב יצאת לדרך.</li>
-        <li><strong>מיקום מדויק (GPS)</strong> — נאסף <strong>רק בעת קריאת SOS פעילה</strong> או בעת שימוש בתכונת "סימון רכב ויציאה רגלית".</li>
-        <li><strong>רמת סוללה ואזור כללי</strong> — נלכדים בתחילת קריאת SOS ומוצגים למחלצים.</li>
-        <li><strong>היסטוריית קריאות</strong> — פרטי קריאות SOS קודמות נשמרים כדי שתוכל לצפות בהן.</li>
-        <li><strong>אסימון התראות (Push Token)</strong> — מזהה מכשיר טכני המאפשר לשלוח התראות על קריאות מצוקה.</li>
-      </ul>
+<h2>1. איזה מידע נאסף</h2>
+<h3>מידע שאת/ה מוסר/ת</h3>
+<ul>
+  <li><strong>שם</strong> — כפי שהזנת בהרשמה.</li>
+  <li><strong>מספר טלפון</strong> — מוקלד על ידך בהרשמה. הוא אינו מאומת ואינו משמש כאמצעי התחברות.</li>
+  <li><strong>סוגי רכב</strong> — האופנוע/רכב השטח שברשותך.</li>
+</ul>
 
-      <h2>שימוש במיקום</h2>
-      <p>המיקום שלך אינו נאסף ברקע באופן רציף. הוא נלכד אך ורק כאשר <strong>אתה</strong> מפעיל קריאת SOS, או כאשר אתה מסמן את מיקום רכבך לפני יציאה רגלית.</p>
-      <div class="callout">
-        <strong>סימון הרכב פרטי לחלוטין.</strong> מיקום הרכב שאתה מסמן ב"יציאה רגלית" נשמר עבורך בלבד ואינו משותף עם אף אחד — לא עם חברי המעגל ולא עם המנהל.
-      </div>
+<h3>מידע שנאסף בעת שימוש</h3>
+<ul>
+  <li><strong>מיקום GPS</strong> — נקלט ברגע שליחת קריאת SOS, וכן בעת סימון מיקום נוכחי. במהלך חילוץ פעיל האפליקציה עשויה לעדכן את מיקומך גם ברקע, כדי שהמחלץ יוכל למצוא אותך.</li>
+  <li><strong>אזור</strong> — מחושב מהמיקום שלך.</li>
+  <li><strong>מצב סוללה</strong> — נשמר ברגע שליחת הקריאה, כדי שהמחלץ ידע כמה זמן נותר למכשירך.</li>
+  <li><strong>מזהה התראות (FCM token)</strong> — מזהה טכני לכל התקנה, המאפשר לשלוח התראה למכשירך.</li>
+  <li><strong>מזהה אנונימי</strong> — מזהה משתמש שנוצר אוטומטית. אינו מכיל מידע אישי.</li>
+  <li><strong>היסטוריית קריאות</strong> — תיעוד קריאות SOS והזמנות לרכיבה שיצרת או הצטרפת אליהן.</li>
+</ul>
+<p>האפליקציה <strong>אינה</strong> אוספת אנשי קשר, תמונות, היסטוריית גלישה או מידע פרסומי, ואינה עוקבת אחר מיקומך כשאין קריאה פעילה או סימון מיקום פעיל.</p>
 
-      <h2>עם מי המידע משותף</h2>
-      <ul>
-        <li>בעת <strong>קריאת SOS פעילה</strong>, שמך, סוג הרכב והאזור משודרים לחברים אחרים במעגל כדי שמישהו יוכל להגיע לעזרתך.</li>
-        <li>כאשר אתה <strong>מאשר מחלץ מסוים</strong>, המיקום המדויק שלך משותף עם <strong>אותו מחלץ בלבד</strong>, כדי שיוכל להגיע אליך.</li>
-        <li>המידע נשמר בשירותי <strong>Google Firebase / Firestore</strong>, המשמשים כתשתית האחסון והאימות.</li>
-        <li>איננו מוכרים מידע, איננו משתפים אותו עם מפרסמים, ואיננו משתמשים בו לכל מטרה מסחרית.</li>
-      </ul>
+<h2>2. מי רואה את המידע</h2>
+<ul>
+  <li><strong>חברי הקהילה המאושרים</strong> רואים, בעת קריאת SOS: את שמך, סוג הרכב והאזור הכללי.</li>
+  <li><strong>המחלץ שלקח על עצמו את הקריאה</strong> מקבל את מספר הטלפון שלך, ואת המיקום המדויק רק לאחר שאישרת אותו.</li>
+  <li><strong>משתתפי רכיבה</strong> מקבלים את מספר הטלפון של מארגן הרכיבה רק לאחר שהצטרפו.</li>
+  <li><strong>מנהל האפליקציה</strong> (עמית רוטשילד) רואה את כל המידע לצורך אישור חברים, מניעת שימוש לרעה וסגירת קריאות שווא.</li>
+</ul>
+<p>המידע אינו נמכר, אינו מושכר ואינו מועבר למפרסמים או לצדדים שלישיים כלשהם.</p>
 
-      <h2>אנשי קשר במכשירך</h2>
-      <p>כאשר אתה בוחר להזמין רוכב מתוך אנשי הקשר שלך, האפליקציה קוראת את מספר הטלפון של איש הקשר שבחרת <strong>באופן מקומי בלבד</strong>, כדי למלא את שדה ההזמנה. אנשי הקשר שלך אינם נשלחים לשרת ואינם נשמרים.</p>
+<h2>3. היכן המידע נשמר</h2>
+<p>המידע נשמר בשירותי Google Firebase (Firestore, Authentication, Cloud Functions, Cloud Messaging, App Check) בשרתי Google. השימוש בשירותים אלה כפוף גם למדיניות הפרטיות של Google.</p>
 
-      <h2>מה איננו עושים</h2>
-      <ul>
-        <li>איננו משתמשים בכלי ניתוח (Analytics), בדיווח קריסות, או בפרסומות מכל סוג.</li>
-        <li>איננו עוקבים אחר פעילותך מחוץ לאפליקציה.</li>
-        <li>איננו אוספים מיקום ברקע כאשר אין קריאת מצוקה פעילה.</li>
-      </ul>
+<h2>4. משך שמירה ומחיקה</h2>
+<p>פרטי הפרופיל נשמרים כל עוד החשבון פעיל. תיעוד קריאות SOS נשמר לצורך היסטוריה ובטיחות. ניתן לבקש מחיקה מלאה של החשבון והמידע בכל עת, בפנייה למנהל האפליקציה בפרטי הקשר שלהלן.</p>
 
-      <h2>שמירת מידע ומחיקתו</h2>
-      <p>המידע נשמר כל עוד אתה חבר במעגל. אם ברצונך שחשבונך והמידע הקשור אליו יימחקו, פנה אלינו בדוא"ל <a class="inline" href="mailto:amitr@duck.com">amitr@duck.com</a> ונטפל בבקשתך.</p>
+<h2>5. זכויותיך</h2>
+<p>באפשרותך לבקש לעיין במידע שנשמר עליך, לתקן אותו או למחוק אותו. ניתן גם להסיר את ההרשאות לגישה למיקום ולהתראות דרך הגדרות המכשיר — יש לשים לב שהדבר ימנע מהאפליקציה לתפקד בעת חירום.</p>
 
-      <h2>אבטחה</h2>
-      <p>המידע מאוחסן בתשתית מאובטחת של Google Firebase, עם בקרת גישה המגבילה את הקריאה והכתיבה לחברים מאומתים בלבד. עם זאת, שום שירות אינו מאובטח לחלוטין, ואיננו יכולים להבטיח אבטחה מוחלטת.</p>
+<h2>6. גיל</h2>
+<p>האפליקציה מיועדת לבני 18 ומעלה בלבד ואינה מיועדת לילדים.</p>
 
-      <h2>קטינים</h2>
-      <p>האפליקציה אינה מיועדת לילדים ואינה פונה לקהל מתחת לגיל 18.</p>
+<h2>7. שינויים</h2>
+<p>מדיניות זו עשויה להתעדכן. עדכונים יפורסמו בעמוד זה עם תאריך עדכון חדש.</p>
 
-      <h2>שינויים במדיניות</h2>
-      <p>ייתכן שנעדכן מדיניות זו מעת לעת. עדכונים יפורסמו בעמוד זה עם תאריך עדכון מעודכן.</p>
+<h2>8. יצירת קשר</h2>
+<p>עמית רוטשילד — <a href="mailto:amitr@duck.com">amitr@duck.com</a></p>
+</section>
 
-      <div class="callout">
-        <strong>הערה חשובה:</strong> Lone Wolf Rider אינו תחליף לשירותי חירום. במצב חירום חייגו תמיד 101 (מד"א) או 100 (משטרה).
-      </div>
-    </section>
+<hr>
 
-    <hr class="divider" />
+<!-- ==================== ENGLISH ==================== -->
+<section class="en">
+<h1>Privacy Policy — Lone Wolf Rider</h1>
+<p class="meta">Last updated: 13 August 2026</p>
 
-    <!-- ============ ENGLISH ============ -->
-    <section class="policy en" id="en">
-      <p class="muted">This Privacy Policy explains what information the Lone Wolf Rider app ("the App") collects, how it is used, and who it is shared with. The App is an invite-only service for solo off-road riders, operated by an independent developer on a non-profit basis.</p>
+<p>Lone Wolf Rider ("the app") is operated by Amit Rothschild as a private individual. It serves a closed, invitation-only community of off-road riders in Israel, and lets a member in trouble broadcast a call for help to other members.</p>
 
-      <h2>Who we are</h2>
-      <p>The App is developed and operated by <strong>Amit Rothschild</strong> — an independent developer (a private individual), with no company and not for profit. For any privacy question, contact: <a class="inline" href="mailto:amitr@duck.com">amitr@duck.com</a>.</p>
+<div class="card warn">
+<p><strong>Important:</strong> the app is not an emergency service and is not a substitute for one. In an emergency call 101 (ambulance), 100 (police) or 102 (fire) in Israel. There is no guarantee that anyone will see a call, respond to it, or be able to reach you.</p>
+</div>
 
-      <h2>Information we collect</h2>
-      <ul>
-        <li><strong>Phone number</strong> — for sign-in and authentication (SMS verification) and as your identity within the circle.</li>
-        <li><strong>Name</strong> — shown to circle members during a distress call so they can recognize you.</li>
-        <li><strong>Vehicle types</strong> — shown to members so they know what you are riding.</li>
-        <li><strong>Precise location (GPS)</strong> — collected <strong>only during an active SOS</strong>, or when you use the "pin vehicle &amp; walk out" feature.</li>
-        <li><strong>Battery level and general zone</strong> — captured at the start of an SOS and shown to rescuers.</li>
-        <li><strong>Call history</strong> — details of past SOS calls are stored so you can review them.</li>
-        <li><strong>Push notification token</strong> — a technical device identifier that allows distress alerts to be delivered.</li>
-      </ul>
+<h2>1. What we collect</h2>
+<h3>Information you provide</h3>
+<ul>
+  <li><strong>Name</strong> — as entered at registration.</li>
+  <li><strong>Phone number</strong> — typed by you at registration. It is not verified and is not used as a login credential.</li>
+  <li><strong>Vehicle types</strong> — the off-road vehicles you ride.</li>
+</ul>
 
-      <h2>Use of location</h2>
-      <p>Your location is not collected continuously in the background. It is captured only when <strong>you</strong> trigger an SOS, or when you pin your vehicle's location before walking out.</p>
-      <div class="callout">
-        <strong>The vehicle pin is fully private.</strong> The vehicle location you pin in "walk out" is stored for you alone and is not shared with anyone — not with circle members and not with the admin.
-      </div>
+<h3>Information collected in use</h3>
+<ul>
+  <li><strong>GPS location</strong> — captured when you raise an SOS and when you mark your current location. During an active rescue the app may update your location in the background so a rescuer can find you.</li>
+  <li><strong>Region</strong> — derived from your location.</li>
+  <li><strong>Battery level</strong> — recorded at the moment an SOS is raised, so a rescuer knows how long your device may last.</li>
+  <li><strong>Push notification token</strong> — a technical per-install identifier used to deliver alerts.</li>
+  <li><strong>Anonymous user ID</strong> — generated automatically; contains no personal information.</li>
+  <li><strong>Activity history</strong> — records of SOS events and ride invitations you created or joined.</li>
+</ul>
+<p>The app does <strong>not</strong> collect contacts, photos, browsing history or advertising identifiers, and does not track your location when no call or location marker is active.</p>
 
-      <h2>Who we share information with</h2>
-      <ul>
-        <li>During an <strong>active SOS</strong>, your name, vehicle type, and zone are broadcast to other members of the circle so someone can come to help.</li>
-        <li>When you <strong>accept a specific rescuer</strong>, your precise location is shared with <strong>that rescuer only</strong>, so they can reach you.</li>
-        <li>Information is stored on <strong>Google Firebase / Firestore</strong>, used as the storage and authentication infrastructure.</li>
-        <li>We do not sell information, do not share it with advertisers, and do not use it for any commercial purpose.</li>
-      </ul>
+<h2>2. Who can see it</h2>
+<ul>
+  <li><strong>Approved members</strong> see, during an SOS: your name, vehicle type and general region.</li>
+  <li><strong>A rescuer who accepts your call</strong> receives your phone number, and your precise location only after you approve them.</li>
+  <li><strong>Ride participants</strong> receive the organiser's phone number only after joining that ride.</li>
+  <li><strong>The administrator</strong> (Amit Rothschild) can see all data, in order to approve members, prevent misuse and close false calls.</li>
+</ul>
+<p>Data is never sold, rented, or shared with advertisers or any third party.</p>
 
-      <h2>Contacts on your device</h2>
-      <p>When you choose to invite a rider from your contacts, the App reads the selected contact's phone number <strong>locally only</strong>, to fill in the invite field. Your contacts are not sent to any server and are not stored.</p>
+<h2>3. Where it is stored</h2>
+<p>Data is stored using Google Firebase services (Firestore, Authentication, Cloud Functions, Cloud Messaging, App Check) on Google servers. Use of these services is also subject to Google's privacy policy.</p>
 
-      <h2>What we do not do</h2>
-      <ul>
-        <li>We do not use analytics, crash reporting, or advertising of any kind.</li>
-        <li>We do not track your activity outside the App.</li>
-        <li>We do not collect location in the background when there is no active distress call.</li>
-      </ul>
+<h2>4. Retention and deletion</h2>
+<p>Profile data is kept while the account is active. SOS records are retained for history and safety purposes. You may request full deletion of your account and data at any time using the contact details below.</p>
 
-      <h2>Data retention and deletion</h2>
-      <p>Information is retained while you are a member of the circle. If you want your account and associated data deleted, contact us at <a class="inline" href="mailto:amitr@duck.com">amitr@duck.com</a> and we will handle your request.</p>
+<h2>5. Your rights</h2>
+<p>You may request access to, correction of, or deletion of your data. You can also revoke location and notification permissions in your device settings — note that doing so will prevent the app from working in an emergency.</p>
 
-      <h2>Security</h2>
-      <p>Information is stored on Google Firebase's secure infrastructure, with access controls limiting reads and writes to authenticated members only. However, no service is completely secure, and we cannot guarantee absolute security.</p>
+<h2>6. Age</h2>
+<p>The app is intended for users aged 18 and over and is not directed at children.</p>
 
-      <h2>Minors</h2>
-      <p>The App is not intended for children and does not target an audience under the age of 18.</p>
+<h2>7. Changes</h2>
+<p>This policy may be updated. Changes will be posted on this page with a new date.</p>
 
-      <h2>Changes to this policy</h2>
-      <p>We may update this policy from time to time. Updates will be posted on this page with a revised "last updated" date.</p>
+<h2>8. Contact</h2>
+<p>Amit Rothschild — <a href="mailto:amitr@duck.com">amitr@duck.com</a></p>
+</section>
 
-      <div class="callout">
-        <strong>Important note:</strong> Lone Wolf Rider is not a replacement for emergency services. In an emergency always call 101 (MDA) or 100 (Police) in Israel.
-      </div>
-    </section>
-
-    <footer class="foot">
-      Lone Wolf Rider · Amit Rothschild · <a class="inline" href="mailto:amitr@duck.com">amitr@duck.com</a><br />
-      בחירום / Emergency: <span class="em">101</span> · <span class="em">100</span>
-    </footer>
-  </div>
+</div>
 </body>
 </html>

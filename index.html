@@ -147,6 +147,7 @@
 
   /* coming-soon state: muted + not a real link */
   .btn.soon { cursor: default; opacity: 0.92; }
+  a.btn { text-decoration: none; color: inherit; }
   .btn.soon:hover { border-color: var(--line); background: var(--surface); }
 
   .note {
@@ -191,36 +192,33 @@
     <section class="install">
       <h2>התקנת האפליקציה</h2>
 
-      <!-- iPhone / TestFlight.
-           SWAP: when the TestFlight public link is live, change this <div class="btn soon">
-           to <a class="btn" href="PASTE_TESTFLIGHT_LINK"> and remove the .status "בקרוב" span. -->
-      <div class="btn soon" role="link" aria-disabled="true">
+      <!-- iPhone / App Store (public, Israel only). -->
+      <a class="btn" href="https://apps.apple.com/app/id6785061868">
         <span class="glyph" aria-hidden="true">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 1.6c.1 1-.3 2-1 2.8-.7.8-1.8 1.4-2.8 1.3-.1-1 .4-2 1-2.7.8-.8 1.9-1.4 2.8-1.4zM19 17.3c-.5 1.1-.7 1.6-1.3 2.6-.9 1.4-2.1 3.1-3.6 3.1-1.3 0-1.7-.9-3.5-.9s-2.2.8-3.5.9c-1.5.1-2.6-1.5-3.5-2.9-2.4-3.8-2.7-8.3-1.2-10.7 1.1-1.7 2.8-2.7 4.4-2.7 1.6 0 2.7 1 4 1 1.3 0 2-1 4-1 1.4 0 2.9.8 4 2.1-3.5 1.9-2.9 6.9.7 8.4z"/></svg>
         </span>
         <span class="label">
           <span class="top">התקנה ל‑iPhone</span>
-          <span class="sub">דרך TestFlight</span>
+          <span class="sub">דרך ה‑App Store</span>
         </span>
-        <span class="status">בקרוב</span>
-      </div>
+      </a>
 
-      <!-- Android / Google Play.
-           SWAP: when the Play internal-testing link is live, change this <div class="btn soon">
-           to <a class="btn" href="PASTE_PLAY_LINK"> and remove the .status "בקרוב" span. -->
-      <div class="btn soon" role="link" aria-disabled="true">
+      <!-- Android / Google Play: closed-testing OPT-IN link. Works only for Google
+           accounts on the LWR members tester list. When production is approved, switch to
+           https://play.google.com/store/apps/details?id=il.lwr.app and drop the Android note below. -->
+      <a class="btn" href="https://play.google.com/apps/testing/il.lwr.app">
         <span class="glyph" aria-hidden="true">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 2.3 13 11.7l-2.6 2.6L3 4.9c-.3-.3-.4-.6-.4-1 0-.6.4-1.3 1-1.6zM14.2 12.9l2.7 2.7-9.8 5.6c-.7.4-1.5.2-2-.3l9.1-8zm3.9-2.2 2.6 1.5c.9.5.9 1.9 0 2.4l-2.7 1.5-3-3 3.1-2.4zM4.3 2.1c.2 0 .4 0 .6.2l8.3 8.3-1.7 1.7L3.7 3.3 4.3 2.1z"/></svg>
         </span>
         <span class="label">
           <span class="top">התקנה ל‑Android</span>
-          <span class="sub">דרך Google Play</span>
+          <span class="sub">דרך Google Play · שלב בדיקות</span>
         </span>
-        <span class="status">בקרוב</span>
-      </div>
+      </a>
 
       <div class="note">
-        החברות באפליקציה היא <strong>בהזמנה בלבד ובאישור מנהל</strong>. אם קיבלת הזמנה — ההתקנה תיפתח בקרוב לפי סוג המכשיר.
+        החברות באפליקציה היא <strong>בהזמנה בלבד ובאישור מנהל</strong>. אם קיבלת הזמנה — בחר את סוג המכשיר שלך.<br><br>
+        <strong>Android:</strong> לפני ההתקנה, שלח את כתובת ה‑Gmail שלך (החשבון שמחובר ל‑Google Play בטלפון) למי שהזמין אותך, כדי שתצורף לרשימת הבודקים. רק לאחר מכן הכפתור יעבוד.
       </div>
     </section>
   </main>
